@@ -41,7 +41,9 @@ yarn start
 
 Go to http://localhost:3000/
 
-### Example Output
+### Example
+
+[Click to Watch Gif](https://giant.gfycat.com/ColorlessConsciousAmethystinepython.webm)
 
 ```
 CSS keylogger server listening on port 3000!
