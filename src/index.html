@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Keylogger</title>
+  <!-- Just some styles to make the page look better -->
+  <style>
+    body {
+      padding: 5rem;
+      text-align: center;
+      font-family: sans-serif;
+    }
+    input {
+      font-size: 1.2rem;
+      margin: 1rem auto;
+      padding: 0.4em;
+      background-color: #f1f1f1;
+      border: 1px solid #cecece;
+      border-radius: 5px;
+      display: block;
+    }
+  </style>
+  <!-- The malicious CSS -->
+  <link rel="stylesheet" type="text/css" href="/bad.css">
+</head>
+<body>
+<h1>CSS Keylogger Example</h1>
+<input type="text" placeholder="Username" name="username"/>
+<input type="password" placeholder="Password" name="password" autocomplete="new-password"/>
+
+<!-- This JavaScript simulates what React and other frameworks do to the DOM attributes -->
+<!-- This is required for a website to be vulnerable to this keylogger -->
+<script type="text/javascript">
+  (function() {
+    document.querySelectorAll('input').forEach(i => i.addEventListener('input', () => i.setAttribute('value', i.value)));
+  })();
+</script>
+</body>
+</html>

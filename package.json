@@ -1,0 +1,16 @@
+{
+  "name": "css-keylogger",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.15.1"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
